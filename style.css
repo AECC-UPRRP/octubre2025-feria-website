@@ -1,0 +1,182 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--width: 900px;
+	--fonts: ms pgothic;
+}
+
+body {
+	background-image: url(assets/whiteline.jpg);
+	font-family: var(--fonts);
+	font-size: 1.2rem;
+	margin: 0;
+}
+
+a {
+	color: rgb(193, 128, 128);
+}
+
+p {
+	padding: 10px;
+}
+
+code {
+	font-family: jetbrains;
+	font-size: 1rem;
+	padding: 2px;
+	border-radius: 2px;
+	background: rgb(64, 64, 89);
+	color: white;
+}
+
+h2,
+h3 {
+	color: rgb(99, 99, 156);
+	font-style: italic;
+}
+
+header {
+	margin: auto;
+	text-align: center;
+	padding: 20px 0 0 0;
+	max-width: var(--width);
+}
+
+main {
+	max-width: var(--width);
+	margin: auto;
+	padding: 10px;
+}
+
+/* DEFAULT DIV  */
+
+div {
+	padding: 20px;
+	border: 1px solid black;
+	margin: 50px 20px;
+	background: white;
+}
+
+/* CLASSES for people that don't want to customize their DIVs */
+
+/* div classes */
+
+div[theme="terminal"] {
+	background-color: #2e3239;
+	color: #adb4c1;
+	border: 1px solid #66b0ef;
+	&::before {
+		content: "->";
+		color: #66b0ef;
+	}
+	&::after {
+		content: "▇";
+		color: rgb(240, 184, 184);
+		animation-name: blink;
+		animation-duration: 1s;
+		animation-iteration-count: infinite;
+		animation-timing-function: steps(2.1);
+		animation-fill-mode: none;
+	}
+}
+
+@keyframes blink {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+div[theme="clovers"] {
+	border: 2px dotted #7fc451;
+	background-color: rgb(236, 247, 255);
+	border-radius: 10px;
+	color: #5ba851;
+	background-image: url(assets/clovers.gif);
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	&::before {
+		content: url(assets/clover-icon.gif);
+	}
+}
+
+div[theme="space"] {
+	background-image: url(assets/starbgtile.png);
+	color: rgb(208, 217, 238);
+	&::before {
+		content: url(assets/stars1.gif);
+	}
+}
+
+div[theme="cat"] {
+	background-image: url(assets/catputer.gif);
+	border: 1px dashed grey;
+	background-color: rgb(246, 246, 213);
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: top right;
+	&::before {
+		content: url(assets/silly-cat.gif);
+	}
+}
+
+div[theme="cute"] {
+	background-image: url(assets/cinnamoroll3.gif);
+	background-size: 70px;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	border: 2px dashed #c7e3ea;
+	color: #c78ca0;
+	border-radius: 10px;
+	background-color: #fff3fa;
+	&::before {
+		content: url(assets/flowerpink.gif);
+	}
+}
+
+div[theme="iupi"] {
+	background-image: url(assets/gallito.png);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom right;
+	background-color: #e70033;
+	color: white;
+	border-color: #e70033;
+}
+
+/* fonts */
+
+div[font="pixel"] {
+	font-family: pixel;
+	font-size: 0.9rem;
+}
+
+div[font="cursive"] {
+	font-family: handwriting-c;
+	font-size: 1.6rem;
+}
+
+div[font="monospace"] {
+	font-family: jetbrains;
+	font-size: 1.2rem;
+}
+
+@font-face {
+	font-family: "handwriting-c";
+	src: url(assets/Always\ In\ My\ Heart.ttf);
+}
+
+@font-face {
+	font-family: "jetbrains";
+	src: url(assets/jetbrains.ttf);
+}
+
+/* https://www.dafont.com/dogica.font  */
+@font-face {
+	font-family: "pixel";
+	src: url(assets/dogicapixel.ttf);
+}
