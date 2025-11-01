@@ -15,25 +15,48 @@
   </header>
   <main>
     <h2>guide</h2>
+    <p><a href="#fonts">fonts</a> and <a href="#themes">themes</a> options are below!</p>
     <ol>
-      <li>pick a premade theme and font</li>
-      <li>or fully customize your <code>div</code> by adding an <code>id</code> with your name and add the custom CSS on <code>style.css</code></li>
+      <li>fully customize your <code>div</code> by adding an <code>id</code> with your name and add the custom CSS on <code>members.css</code> with the selector <code>#[your-name]</code></li>
+      <p>here's how it would look on the <code>index.html</code></p>
+      <textarea style="display:block;width:90%;height:80px;font-family:jetbrains;font-size:0.8rem">
+<div id="[your-name]" theme="" font="">
+// your name here
+// you can also pick a theme and make changes to it with your custom CSS!
+</div>
+    </textarea>
+      <p>and here's how your custom CSS would look like on <code>members.css</code></p>
+      <textarea style="display:block;width:90%;height:130px;font-family:jetbrains;font-size:0.8rem">
+      #your-name {
+	background-color: coral;
+	color: grey; /*this is the font color */
+	font-family: arial; /*which font you want */
+	border: 2px dashed red; /* customize your border */
+	border-radius: 10px; /* rounded borders */
+}
+</textarea>
+      <li>or pick an already made theme and font! by changing the attributes: <code>font="[name of the font]"</code> and <code> theme="[name of the theme]"</code> of your div!</li>
+      <p>here's how it would look like on <code>index.html</code></p>
+      <textarea style="display:block;width:90%;height:70px;font-family:jetbrains;font-size:0.8rem">
+<div theme="cat" font="pixel">
+      // your name here!
+</div>
+    </textarea>
     </ol>
-    <code>
-    font="[name of the font]"
-    </code>
-    <p><a href="#fonts">click me to see the fonts available!</a></p>
+    <p></p>
 
-    <code>
-    theme="[name of the theme]"
-    </code>
 
-    <p><b>the themes available are down below!</b></p>
+
+
 
     <h3 id="themes">premade themes</h3>
 
     <div theme="cat" font="pixel">
       theme="cat"
+    </div>
+
+    <div theme="rainbow" font="pixel">
+      theme="rainbow"
     </div>
 
     <div theme="terminal" font="monospace">
@@ -48,7 +71,7 @@
       theme="space"
     </div>
 
-    <div theme="iupi" font="pixel">
+    <div theme="iupi">
       theme="iupi"
     </div>
 

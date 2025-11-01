@@ -1,0 +1,9 @@
+/* template! */
+
+#your-name {
+	background-color: coral;
+	color: grey; /*this is the font color */
+	font-family: arial; /*which font you want */
+	border: 2px dashed red; /* customize your border */
+	border-radius: 10px; /* rounded borders */
+}

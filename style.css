@@ -5,6 +5,14 @@
 :root {
 	--width: 900px;
 	--fonts: ms pgothic;
+	--red: #f67a67;
+	--red-s: #bf1800;
+	--green: #d2ff61;
+	--green-s: #9ebf49;
+	--cyan: #25f2e8;
+	--cyan-s: #329a95;
+	--pink: #ea76cb;
+	--pink-s: #bf6299;
 }
 
 body {
@@ -12,6 +20,38 @@ body {
 	font-family: var(--fonts);
 	font-size: 1.2rem;
 	margin: 0;
+}
+
+h1 {
+	font-family: pixel;
+	font-size: 1.9rem;
+}
+ol p,
+ol textarea {
+	margin-left: 50px;
+}
+
+li {
+	margin: 20px;
+	background: lightgoldenrodyellow;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+span.a {
+	color: var(--red-s);
+}
+
+span.e {
+	color: var(--green-s);
+}
+
+span.c1 {
+	color: var(--cyan-s);
+}
+
+span.c2 {
+	color: var(--pink-s);
 }
 
 a {
@@ -24,7 +64,7 @@ p {
 
 code {
 	font-family: jetbrains;
-	font-size: 1rem;
+	font-size: 0.8rem;
 	padding: 2px;
 	border-radius: 2px;
 	background: rgb(64, 64, 89);
@@ -156,7 +196,7 @@ div[font="pixel"] {
 }
 
 div[font="cursive"] {
-	font-family: handwriting-c;
+	font-family: handwriting;
 	font-size: 1.6rem;
 }
 
@@ -166,7 +206,7 @@ div[font="monospace"] {
 }
 
 @font-face {
-	font-family: "handwriting-c";
+	font-family: "handwriting";
 	src: url(assets/Always\ In\ My\ Heart.ttf);
 }
 
