@@ -13,46 +13,28 @@
 <body>
   <header>
     <h1>casa abierta - <span class="a">A</span><span class="e">E</span><span class="c1">C</span><span class="c2">C</span> asistencia</h1>
-    <p>¡Escribir tu nombre en un DIV que puedes editar! - <i>Total de estudiantes:</i> </p>
+    <p>¡Escribir tu nombre en un DIV que puedes editar! - <i>Total de estudiantes:</i> <span></span> </p>
   </header>
   <main>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div theme="" font="">
-      <b>YOUR NAME</b>
-      <br>
-      YOU CAN WRITE ANYTHING HERE!
+    <div theme="space" font="pixel">
+      <b>Yaved Aviles Flores</b>
     </div>
 
+    <div theme="cute" font="cursive">
+      <b>Dariana Sofia</b>
+      <br>
+      Supera tus limites!
+    </div>
 
+    <div theme="iupi" font="pixel">
+      <b>Hector G Torres</b>
+      <br>
+    </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    <div theme="space" font="cursive">
+      <b>Amaia Ramos</b>
+    </div>
 
     <div theme="cat" font="pixel">
       <b>Iazeel Kareb</b>
@@ -60,37 +42,11 @@
       Espectacular ;)
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     <div theme="cat" font="cursive">
       <b>Camila Negron</b>
       <br>
       Cybersecurity
     </div>
-
-
-
-
-
-
-
-
-
-
-
 
     <div theme="space" font="pixel">
       <b>Diego A. Montalvo González</b>
@@ -98,29 +54,11 @@
       Gurren Lagann is peak!
     </div>
 
-
-
-
-
-
-
-
-
-
-
     <div theme="cat" font="">
       <b>Ambar</b>
       <br>
       COMPUTER SCIENCE
     </div>
-
-
-
-
-
-
-
-
 
     <div theme="space" font="">
       <b>PABLO cAMPOS</b>
@@ -128,23 +66,9 @@
       MATRICULENSE EN <s>MATEMATICA</s> COMPUTOS!
     </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
     <div theme="rainbow" font="cursive">
       <b>Vanessa Gonzalez</b>
     </div>
-
-
 
     <div theme="cute" font="cursive">
       <b>Eunice S. Tapia</b>
@@ -152,40 +76,17 @@
       Love and peace!
     </div>
 
-
-
-
-
     <div theme="space" font="pixel">
       <b>Jaimy I Figueroa</b>
       <br>
       UPI BABY
     </div>
 
-
-
-
-
-
-
-
-
-
-
     <div theme="clovers" font="">
       <b>Berlishka Gonzalez</b>
       <br>
       Ponce!
     </div>
-
-
-
-
-
-
-
-
-
 
     <div theme="clovers" font="cursive">
       <b>Alejandro Feliciano</b>
@@ -199,34 +100,16 @@
       I like fish!
     </div>
 
-
     <div theme="space" font="pixel">
       Ana Torres <br>
       I like space cats
     </div>
-
 
     <div theme="cat" font="pixel">
       <b>Jorge A.</b>
       <br>
       i like cats a lot
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
     <!-- 
 
@@ -238,12 +121,11 @@
     
  -->
 
-
-
     <script>
-      let counterSpan = document.querySelector("header p");
+      // cantidad de personas que firmaron la asistencia
+      let counterSpan = document.querySelector("header p span");
       let counter = document.querySelectorAll("main div");
-      counterSpan.textContent += counter.length;
+      counterSpan.textContent = counter.length;
 
     </script>
   </main>
