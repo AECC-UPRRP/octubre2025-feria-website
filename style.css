@@ -178,6 +178,26 @@ div[theme="cute"] {
 	}
 }
 
+div[theme="rainbow"] {
+	color: rgb(78, 80, 129);
+	background: #ff8c98;
+	background: linear-gradient(
+		274deg,
+		rgba(255, 140, 152, 1) 0%,
+		rgba(247, 209, 151, 1) 18%,
+		rgba(247, 245, 151, 1) 37%,
+		rgba(145, 214, 126, 1) 56%,
+		rgba(164, 213, 222, 1) 77%,
+		rgba(194, 164, 222, 1) 100%
+	);
+	border: 8px double white;
+
+	&::before {
+		transform: scale(1);
+		content: url(assets/rainbow1.gif);
+	}
+}
+
 div[theme="iupi"] {
 	background-image: url(assets/gallito.png);
 	background-size: contain;
@@ -197,12 +217,12 @@ div[font="pixel"] {
 
 div[font="cursive"] {
 	font-family: handwriting;
-	font-size: 1.6rem;
+	font-size: 1.8rem;
 }
 
 div[font="monospace"] {
 	font-family: jetbrains;
-	font-size: 1.2rem;
+	font-size: 1.3rem;
 }
 
 @font-face {

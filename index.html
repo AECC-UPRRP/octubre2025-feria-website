@@ -13,7 +13,7 @@
 <body>
   <header>
     <h1>casa abierta - <span class="a">A</span><span class="e">E</span><span class="c1">C</span><span class="c2">C</span> asistencia</h1>
-    <p>¡Escribir tu nombre en un DIV que puedes editar! <a href="help.html">guide</a></p>
+    <p>¡Escribir tu nombre en un DIV que puedes editar! - <i>Total de estudiantes:</i> </p>
   </header>
   <main>
 
@@ -30,17 +30,186 @@
 
 
 
-
-
-
-
-
     <div theme="" font="">
-      <b>write your name here!</b>
+      <b>YOUR NAME</b>
       <br>
-      you can also write a small message here or whatever you'd like! :p
+      YOU CAN WRITE ANYTHING HERE!
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="cat" font="pixel">
+      <b>Iazeel Kareb</b>
       <br>
-      you can customize your box however you like with CSS. don't know where to start? check out our guide! <a href="help.html#themes">themes</a>!
+      Espectacular ;)
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="cat" font="cursive">
+      <b>Camila Negron</b>
+      <br>
+      Cybersecurity
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="space" font="pixel">
+      <b>Diego A. Montalvo González</b>
+      <br>
+      Gurren Lagann is peak!
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="cat" font="">
+      <b>Ambar</b>
+      <br>
+      COMPUTER SCIENCE
+    </div>
+
+
+
+
+
+
+
+
+
+    <div theme="space" font="">
+      <b>PABLO cAMPOS</b>
+      <br>
+      MATRICULENSE EN <s>MATEMATICA</s> COMPUTOS!
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="rainbow" font="cursive">
+      <b>Vanessa Gonzalez</b>
+    </div>
+
+
+
+    <div theme="cute" font="cursive">
+      <b>Eunice S. Tapia</b>
+      <br>
+      Love and peace!
+    </div>
+
+
+
+
+
+    <div theme="space" font="pixel">
+      <b>Jaimy I Figueroa</b>
+      <br>
+      UPI BABY
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div theme="clovers" font="">
+      <b>Berlishka Gonzalez</b>
+      <br>
+      Ponce!
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <div theme="clovers" font="cursive">
+      <b>Alejandro Feliciano</b>
+      <br>
+      :)
+    </div>
+
+    <div theme="terminal" font="pixel">
+      <b>Juan Ocasio</b>
+      <br>
+      I like fish!
+    </div>
+
+
+    <div theme="space" font="pixel">
+      Ana Torres <br>
+      I like space cats
+    </div>
+
+
+    <div theme="cat" font="pixel">
+      <b>Jorge A.</b>
+      <br>
+      i like cats a lot
     </div>
 
 
@@ -62,18 +231,21 @@
     <!-- 
 
  <div theme="" font="">
-      <b>write your name here!</b>
+      <b>YOUR NAME</b>
       <br>
-      you can also write a small message here or whatever you'd like! :p
-      <br>
-      you can customize your box however you like with CSS. don't know where to start? check out our guide! <a href="help.html#themes">themes</a>!
+      YOU CAN WRITE ANYTHING HERE!
     </div>
     
  -->
 
 
 
+    <script>
+      let counterSpan = document.querySelector("header p");
+      let counter = document.querySelectorAll("main div");
+      counterSpan.textContent += counter.length;
 
+    </script>
   </main>
 </body>
 
