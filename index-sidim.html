@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="assets/aecc-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="members.css">
+  <title>AECC SIDIM</title>
+</head>
+
+<body>
+  <header>
+    <h1> SIDIM - <span class="a">A</span><span class="e">E</span><span class="c1">C</span><span class="c2">C</span> asistencia</h1>
+    <p>¡Escribir tu nombre en un DIV que puedes editar! - <i>Total de firmas:</i> <span></span> </p>
+  </header>
+  <main>
+
+    <div theme="clovers" font="cursive">
+      <b>Raffaella Comes Lebrón</b>
+      <br>
+      ¡¡Amo crear un div!!<br>
+
+      <p>Roses are red,<br>
+        Violets are blue,<br>
+        I like to code<br>
+        and so can you!</p>
+
+      <p font="monospace">Σ:3</p>
+    </div>
+
+    <div theme="cute" font="pixel">
+      Ari!
+    </div>
+
+    <!-- 
+
+ <div theme="" font="">
+      <b>YOUR NAME</b>
+      <br>
+      YOU CAN WRITE ANYTHING HERE!
+    </div>
+    
+ -->
+
+    <script>
+      // cantidad de personas que firmaron la asistencia
+      let counterSpan = document.querySelector("header p span");
+      let counter = document.querySelectorAll("main div");
+      counterSpan.textContent = counter.length;
+
+    </script>
+  </main>
+</body>
+
+</html>

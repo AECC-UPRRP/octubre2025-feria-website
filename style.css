@@ -210,17 +210,17 @@ div[theme="iupi"] {
 
 /* fonts */
 
-div[font="pixel"] {
+[font="pixel"] {
 	font-family: pixel;
 	font-size: 0.9rem;
 }
 
-div[font="cursive"] {
+[font="cursive"] {
 	font-family: handwriting;
 	font-size: 1.8rem;
 }
 
-div[font="monospace"] {
+[font="monospace"] {
 	font-family: jetbrains;
 	font-size: 1.3rem;
 }
